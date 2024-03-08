@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman- Playing</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/ic.png">
+</head>
+
+<body>
+    <div id="main">
+        <div id="title">
+            <h1>HangMan </h1>
+        </div>
+        <br>
+        <div class="center cat">
+            <h3>Guess the word</h3>
+        </div>
+        <br>
+        <div class="center keys">
+            <div class="keyPos">
+                <button class="keyBtn" type="button" onclick="key(this)">A</button>
+                <button class="keyBtn" type="button" onclick="key(this)">B</button>
+                <button class="keyBtn" type="button" onclick="key(this)">C</button>
+                <button class="keyBtn" type="button" onclick="key(this)">D</button>
+                <button class="keyBtn" type="button" onclick="key(this)">E</button>
+                <button class="keyBtn" type="button" onclick="key(this)">F</button>
+                <button class="keyBtn" type="button" onclick="key(this)">G</button>
+                <button class="keyBtn" type="button" onclick="key(this)">H</button>
+                <button class="keyBtn" type="button" onclick="key(this)">I</button>
+                <button class="keyBtn" type="button" onclick="key(this)">J</button>
+                <button class="keyBtn" type="button" onclick="key(this)">K</button>
+                <button class="keyBtn" type="button" onclick="key(this)">L</button>
+            </div>
+
+            <div class="keyPos">
+                <button class="keyBtn" type="button" onclick="key(this)">M</button>
+                <button class="keyBtn" type="button" onclick="key(this)">N</button>
+                <button class="keyBtn" type="button" onclick="key(this)">O</button>
+                <button class="keyBtn" type="button" onclick="key(this)">P</button>
+                <button class="keyBtn" type="button" onclick="key(this)">Q</button>
+                <button class="keyBtn" type="button" onclick="key(this)">R</button>
+                <button class="keyBtn" type="button" onclick="key(this)">S</button>
+                <button class="keyBtn" type="button" onclick="key(this)">T</button>
+                <button class="keyBtn" type="button" onclick="key(this)">U</button>
+                <button class="keyBtn" type="button" onclick="key(this)">V</button>
+                <button class="keyBtn" type="button" onclick="key(this)">W</button>
+                <button class="keyBtn" type="button" onclick="key(this)">X</button>
+                <button class="keyBtn" type="button" onclick="key(this)">Y</button>
+                <button class="keyBtn" type="button" onclick="key(this)">Z</button>
+            </div>
+        </div>
+
+        <pre id="word"></pre>
+
+        <div id="hangman">
+            <h1>
+                <pre id="hm">
+
+    +---+
+    |      |
+    |
+    |
+    |
+    |
+    =========
+            </pre>
+            </h1>
+        </div>
+    </div>
+    <div id="confirmation">
+        <h1 id="mes">You lose!</h1>
+        <div id="resCont">
+            <h3 id="res">The word was:</h3><br>
+            <p id="resWord"></p>
+        </div>
+        <p>Try again?</p>
+        <a href="game.html">Yes</a>
+        <a href="../index.html">No thanks</a>
+    </div>
+    <script src="../assets/script/script.js"></script>
+</body>
+
+</html>

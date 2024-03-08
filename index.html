@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/ic.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <div id="title">
+            <h1>HangMan</h1>
+        </div>
+        <br>
+
+        <div class="center cat">
+            <h3>Please select a category</h3>
+        </div>
+
+        <div class="center options">
+            <h4 class="opt" onclick="play(this)">Animals</h4>
+            <h4 class="opt" onclick="play(this)">Fruits</h4>
+            <h4 class="opt" onclick="play(this)">Video Games</h4>
+            <h4 class="opt" onclick="play(this)">Countries</h4>
+            <h4 class="opt" onclick="play(this)">Songs</h4>
+        </div>
+        <br><br>
+        <div id="hangman">
+            <h1>
+                <pre id="hm">
+        +---+
+        |      |
+        |      O
+        |    /|\
+        |     /\
+        |
+        =========
+            </pre>
+            </h1>
+        </div>
+    </div>
+
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
