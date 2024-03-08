@@ -198,6 +198,7 @@ function key(keyBtn) {
         loss.play();
         document.getElementById("confirmation").style.display = "flex";
         document.getElementById("resWord").textContent = guessWord;
+        document.getElementById("res").textContent = "";
     }
 
 }
