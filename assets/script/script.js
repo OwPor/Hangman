@@ -175,6 +175,7 @@ function key(keyBtn) {
         if (!wordDisplay.includes('_')) {
             win.play();
             document.getElementById("mes").innerHTML = "Congratulations You won!"
+            document.getElementById("res").textContent = "";
             document.getElementById("confirmation").style.display = "flex";
         }
     }
